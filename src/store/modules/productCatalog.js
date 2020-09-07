@@ -33,34 +33,110 @@ export default {
         newArrivals: [
             {
                 title: "Blue silk flare sleeved top",
-                badge: "new",
+                badges: "new",
+                discount: "",
                 image: require('@/assets/images/products/product1.png')
             },
             {
                 title: "New look men's coat",
-                badge: "new",
+                badges: "new",
+                discount: "",
                 image: require('@/assets/images/products/product2.png')
             },
             {
                 title: "Circle pattern girls shirt",
-                badge: "new",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product3.png')
+            },
+            {
+                title: "Blue silk flare sleeved top",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product1.png')
+            },
+            {
+                title: "New look men's coat",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product3.png')
+            },
+            {
+                title: "Blue silk flare sleeved top",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product1.png')
+            },
+            {
+                title: "New look men's coat",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
                 image: require('@/assets/images/products/product3.png')
             }
         ],
         featuredProducts: [
             {
                 title: "Winter collection for women's",
-                badge: "hot",
+                badges: "hot",
+                discount: "",
                 image: require('@/assets/images/products/product4.png')
             },
             {
                 title: "New look men's coat",
-                badge: "hot",
+                badges: "hot",
+                discount: "",
                 image: require('@/assets/images/products/product5.png')
             },
             {
                 title: "Red women's blazer full",
-                badge: "-30%",
+                badges: "discount",
+                discount: "-30%",
+                image: require('@/assets/images/products/product6.png')
+            },
+            {
+                title: "Winter collection for women's",
+                badges: "hot",
+                image: require('@/assets/images/products/product4.png')
+            },
+            {
+                title: "New look men's coat",
+                badges: "hot",
+                image: require('@/assets/images/products/product5.png')
+            },
+            {
+                title: "Red women's blazer full",
+                badges: "discount",
+                discount: "-30%",
+                image: require('@/assets/images/products/product6.png')
+            },
+            {
+                title: "Winter collection for women's",
+                badges: "hot",
+                discount: "",
+                image: require('@/assets/images/products/product4.png')
+            },
+            {
+                title: "New look men's coat",
+                badges: "hot",
+                discount: "",
+                image: require('@/assets/images/products/product5.png')
+            },
+            {
+                title: "Red women's blazer full",
+                badges: "discount",
+                discount: "-30%",
                 image: require('@/assets/images/products/product6.png')
             }
         ],
@@ -81,7 +157,32 @@ export default {
                 image: require('@/assets/images/products/product9.png')
             }
         ],
-        mayAlsoLike: [],
+        mayAlsoLike: [
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                disount: "",
+                image: require('@/assets/images/products/mayalsolike/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/mayalsolike/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product4.png')
+            },
+        ],
         relatedProducts: [],
         wishlist: []
     },
@@ -95,6 +196,9 @@ export default {
     },
 
     getters: {
+        productCatalog(state) {
+            return state.newArrivals.concat(state.featuredProducts)             
+        },
         shopByCategory(state) {
             return state.shopByCategory
         },

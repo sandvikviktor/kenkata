@@ -86,7 +86,7 @@ export default {
     if (desktop.matches) {
       $('#navBottom .nav-link').removeAttr('data-toggle');
     } else {
-      $('#navBottom .nav-link').setAttr('data-toggle', 'dropdown');
+      // $('#navBottom .nav-link').setAttr('data-toggle', 'dropdown');
     }
   }
 }

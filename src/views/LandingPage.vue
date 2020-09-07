@@ -9,7 +9,7 @@
         </div>
       </div>
       <!-- Features Row -->
-      <div class="mb-custom mt-lg-5 col-md-12 col-xl-11">
+      <div id="headerFeatures" class="mb-custom mt-lg-5 col-md-12 col-xl-11">
         <FeaturesCardDeck />
       </div>
     </div>

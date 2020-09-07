@@ -43,8 +43,11 @@ html, body {
 p {
   font-size: 0.9rem;
   line-height: 1.7;
+  margin-bottom: 0;
 }
-
+.carousel-height {
+  height: 380px;
+}
 .my-custom {
   margin-top: 5em;
   margin-bottom: 5em;

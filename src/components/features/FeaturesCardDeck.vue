@@ -1,5 +1,5 @@
 <template>
-    <div id="headerFeatures" class="row">
+    <div class="row">
         <div v-for="(feature, index) in features" :key="index"  class="col-md-6 col-lg-6 col-xl-3">
             <FeaturesCard :feature="feature"/>
         </div>
@@ -20,12 +20,10 @@ export default {
 </script>
 
 <style>
-
-#headerFeatures .card:hover {
+#detailsFeatures .card:hover, #headerFeatures .card:hover {
     background-color: var(--kenkata-blue);
     font-size: 0.9rem;
     color: white;
     cursor: pointer;
 }
-
 </style>

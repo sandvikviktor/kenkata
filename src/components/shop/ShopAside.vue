@@ -1,5 +1,5 @@
 <template>
-<aside class="col-lg-3 px-0">
+<aside class="col-lg-3 pl-0">
     <!-- Product Categories -->
     <p class="shop-heading">Product Categories</p>
     <ul class="pb-3">
@@ -44,7 +44,7 @@
 
     <!-- Filter by Brand -->
     <p class="shop-heading">Filter by Brand</p>
-    <ul class="brandfilter pb-4">
+    <ul class="filter-brand pb-4">
         <li class="d-flex">
             <img src="@/assets/brands/Bexim.png">
             <img class="ml-4" src="@/assets/brands/Lighton.png">
@@ -113,7 +113,7 @@ export default {
         padding: 0 16px;
         border-radius: 10px;
     }
-    .brandfilter img {
+    .filter-brand img {
         border: 1px solid var(--kenkata-gray-lighter);
         width: 85px;
         padding: 4px 10px;

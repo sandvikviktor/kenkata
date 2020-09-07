@@ -5,7 +5,7 @@
             <h2 class="text-uppercase font-weight-bold text-kenkata-blue-dark">Subscribe</h2>
             <h2 class="text-uppercase font-weight-bold text-kenkata-blue ml-2">Now</h2>
         </div>
-        <p class="pl-0">Signup for awesome news about our new products and know our special discounts on products.</p>
+        <p class="pl-0 pb-3">Signup for awesome news about our new products and know our special discounts on products.</p>
         <form class="form-inline position-relative">
             <input class="form-control bg-transparent" type="email" placeholder="Enter email address">
             <button class="btn bg-kenkata-blue position-absolute text-white" type="submit">Subscribe</button>

@@ -1,18 +1,9 @@
 <template>
   <div id="topNews" class="position-relative">
       <carousel :margin="25" :responsive="{0:{items:1,nav:false,dots:false},760:{items:2,nav:false,dots:true},1000:{items:3,nav:false,dots:true}}">
-        <ProductCard title="Blue silk flare sleeved top" 
-                     pills="new" 
-                     :image="require('@/assets/images/products/product1.png')"/>
-        <ProductCard title="New look men's coat" pills="new" :image="require('@/assets/images/products/product2.png')"/>
-        <ProductCard title="Circle pattern girls shirt" pills="new" :image="require('@/assets/images/products/product3.png')"/>
-        <ProductCard title="Blue silk flare sleeved top" pills="new" :image="require('@/assets/images/products/product1.png')"/>
-        <ProductCard title="New look men's coat" pills="new" :image="require('@/assets/images/products/product2.png')"/>
-        <ProductCard title="Circle pattern girls shirt" pills="new" :image="require('@/assets/images/products/product3.png')"/>
-        <ProductCard title="Blue silk flare sleeved top" pills="new" :image="require('@/assets/images/products/product1.png')"/>
-        <ProductCard title="New look men's coat" pills="new" :image="require('@/assets/images/products/product2.png')"/>
-        <ProductCard title="Circle pattern girls shirt" pills="new" :image="require('@/assets/images/products/product3.png')"/>
-
+        <div class="carousel-height" v-for="(product, index) in newArrivals" :key="index">
+          <ProductCard :product="product" :id="index" />
+        </div>
         <template slot="prev"><span class="d-none d-xl-flex owl-prev"><i class="fas fa-chevron-left"></i></span></template>
         <template slot="next"><span class="d-none d-xl-flex owl-next"><i class="fas fa-chevron-right"></i></span></template>
       </carousel> 
@@ -21,14 +12,19 @@
 
 <script>
 import carousel from 'vue-owl-carousel'
+import { mapGetters } from 'vuex'
 import ProductCard from '../products/ProductCard'
 export default {
     name: 'NewsCarousel',
-    components: { carousel, ProductCard }
+    components: { carousel, ProductCard },
+    computed: {
+      ...mapGetters(['newArrivals'])
+    }
 }
 </script>
 
 <style>
+
 .owl-prev, .owl-next {
   position: absolute;
   border: 2px solid #E3E3E3;

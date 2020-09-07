@@ -9,6 +9,7 @@
                     <router-link to="/shop">Shop</router-link>
                 </small>
             </span>
+            <!-- <ShopCategories /> -->
         </div>
         <div class="d-flex">
             <div class="card bg-kenkata-blue-dark text-white py-1 px-3">
@@ -16,6 +17,7 @@
                     <small>Show: <a href="#">9 </a>/ <a href="#">12 </a>/ <a href="#">18 </a>/ <a href="#">24 </a></small>
                 </span>
             </div>
+
             <div class="card bg-kenkata-blue-dark px-3 mx-4">
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="@/assets/icons/grid/list.png">
@@ -23,6 +25,7 @@
                     <img src="@/assets/icons/grid/grid3.png">
                 </div>
             </div>
+
             <div class="card bg-kenkata-blue-dark px-1 text-white p-0">
                 <small class="m-auto">
                     <span class="nav-item dropdown">
@@ -36,15 +39,18 @@
                         </div>
                     </span>
                 </small>
-            </div>
+            </div>            
         </div>
       </div>
   </div>
 </template>
 
 <script>
+// import ShopCategories from './toprow/ShopCategories'
 export default {
-
+    components: {
+        // ShopCategories
+    }
 }
 </script>
 

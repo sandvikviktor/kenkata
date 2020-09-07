@@ -5,7 +5,7 @@
               <img class="card-image" :src="feature.icon">
           </div>
           <div>
-              <p class="card-title mb-0">{{ feature.title }}</p>
+              <p class="card-title mb-2">{{ feature.title }}</p>
               <p class="card-text">{{ feature.text }}</p>
           </div>
       </div>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-.features-card {
+#headerFeatures .features-card {
     margin-top: 20px;
 }
 .card-title{
@@ -29,12 +29,20 @@ export default {
 .card-text {
     font-weight: 400;
     font-size: 0.8rem;
-    line-height: 1.5;
 }
 .card:hover .card-title {
     color: white;
 }
-.card:hover .card-image {
+#headerFeatures .card:hover .card-image {
     filter: brightness(0) invert(1);
 }
+
+#detailsFeatures .features-card {
+    background-color: white;
+}
+#detailsFeatures .card:hover .card-image {
+    filter: brightness(0) invert(1);
+}
+
+
 </style>

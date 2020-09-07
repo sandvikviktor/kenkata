@@ -24,8 +24,9 @@
     <ShopTopRow />
 
     <!-- Shop -->
-    <div class="container mb-custom py-4">
-        <ShopAside />        
+    <div class="container mb-custom py-4 d-flex">
+        <ShopAside />
+        <ShopCardDeck  />        
     </div>
 
     <!-- Subscribe Now -->
@@ -39,23 +40,23 @@
     <Brands />
 
     <!-- Footer -->
-    <FooterKenkata />
-    
+    <FooterKenkata />    
   </div>
 </template>
 
 <script>
-import New from '@/components/pills/New'
-import Discount from '@/components/pills/Discount'
-import ShopTopRow from '@/components/shop/ShopTopRow'
+import New from '@/components/badges/New'
+import Discount from '@/components/badges/Discount'
+import ShopTopRow from '@/components/shop/toprow/ShopTopRow'
 import ShopAside from '@/components/shop/ShopAside'
+import ShopCardDeck from '@/components/shop/ShopCardDeck'
 import SubscribeNow from '@/components/SubscribeNow'
 import Brands from "@/components/Brands"
 import FooterKenkata from "@/components/FooterKenkata"
 export default {
     components: {
         New, Discount,
-        ShopTopRow, ShopAside, SubscribeNow, Brands, FooterKenkata
+        ShopTopRow, ShopAside, ShopCardDeck, SubscribeNow, Brands, FooterKenkata
     }
 }
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div id="socialmedias" class="d-flex">
-    <a class="nav-link p-0" href="#"><i class="nav-link fab fa-facebook-f"></i></a>
-    <a class="nav-link p-0" href="#"><i class="nav-link fab fa-twitter"></i></a>
-    <a class="nav-link p-0" href="#"><i class="fab fa-instagram"></i></a>
-    <a class="nav-link p-0" href="#"><i class="fab fa-pinterest-p"></i></a>
-    <a class="nav-link p-0" href="#"><i class="fab fa-youtube"></i></a>     
+    <a class="fb nav-link p-0" href="#"><i class="nav-link fab fa-facebook-f"></i></a>
+    <a class="twitter nav-link p-0" href="#"><i class="nav-link fab fa-twitter"></i></a>
+    <a class="insta nav-link p-0" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="pint nav-link p-0" href="#"><i class="fab fa-pinterest-p"></i></a>
+    <a class="youtube nav-link p-0" href="#"><i class="fab fa-youtube"></i></a>     
   </div>
 </template>
 
@@ -30,5 +30,6 @@ footer #socialmedias a{
 footer #socialmedias a:hover{
   color: white
 }
+
 
 </style>
