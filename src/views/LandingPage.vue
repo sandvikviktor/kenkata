@@ -101,10 +101,8 @@
         text="Check out our weekly top sellers in all category"
       />
 
-      <div class="container mx-auto mt-5 top-sellers-grid">
-        <ProductCard class="top-grid-1" title="Men's denim shirts full" :image="require('@/assets/images/products/product7.png')" />
-        <ProductCard class="top-grid-2" title="Men's denim shirts full" :image="require('@/assets/images/products/product8.png')" />
-        <ProductCard class="top-grid-3" title="Men's denim shirts full" :image="require('@/assets/images/products/product9.png')" />
+      <div class="container mx-auto mt-5 top-sellers-grid">  
+        <ProductCard v-for="(product, index) in topSellers" :key="index" :product="product" :class="'grid-' + index"/>
       </div>
     </div>
     
@@ -174,6 +172,9 @@ export default {
     Brands,
     FooterKenkata
   },
+  computed: {
+    ...mapGetters(['topSellers'])
+  }
 };
 </script>
 
@@ -213,9 +214,13 @@ export default {
 }
 
 /* Top Sellers */
-.top-grid-1 { grid-area: grid-1;}
+/* .top-grid-1 { grid-area: grid-1;}
 .top-grid-2 { grid-area: grid-2}
-.top-grid-3 { grid-area: grid-3}
+.top-grid-3 { grid-area: grid-3} */
+
+.grid-0 { grid-area: grid-1;}
+.grid-1 { grid-area: grid-2}
+.grid-2 { grid-area: grid-3}
 
 .top-sellers-grid {
   height: 100%;

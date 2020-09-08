@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar/>
+    <Navbar id="kenkata-nav"/>
     <transition
       mode="out-in"
       enter-active-class="animate__animated animate__fadeIn animate__faster"

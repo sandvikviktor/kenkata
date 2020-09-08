@@ -5,8 +5,7 @@
             <span class="d-flex align-items-center">
                 <small>
                     <router-link to="/">Home</router-link> / 
-                    <router-link to="/shop">Shop</router-link> / 
-                    
+                    <router-link to="/shop">Shop</router-link> /                     
                 </small>
             </span>
             <!-- <ShopCategories /> -->
@@ -16,9 +15,9 @@
                 <img src="@/assets/brands/Bexim.png" alt="">
             </div>
             <div class="d-flex align-items-center ml-3">
-                <i class="fas fa-arrow-left"></i>
-                <img class="grid-img" src="@/assets/icons/grid/grid2.png" alt="">    
-                <i class="fas fa-arrow-right"></i>    
+                <i class="fas fa-chevron-left font-weight-light"></i>
+                <img class="grid-img mx-2" src="@/assets/icons/grid/grid2.png" alt="">    
+                <i class="fas fa-chevron-right font-weight-light"></i>
             </div>       
         </div>
       </div>
@@ -34,6 +33,10 @@ export default {
 <style scoped>
 a{
     color: white !important;
+}
+i {
+    font-size: 1.2rem;
+
 }
 .filter-brand {
     border-radius: 4px;

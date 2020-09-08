@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import LandingPage from '../views/LandingPage.vue'
 import Shop from '../views/shop/Shop.vue'
 import ProductDetails from '../views/shop/ProductDetails'
+import ShoppingCart from '../views/checkout/ShoppingCart'
+import Checkout from '../views/checkout/Checkout'
 
 Vue.use(VueRouter)
   const routes = [
@@ -21,6 +23,16 @@ Vue.use(VueRouter)
     name: 'ProductDetails',
     component: ProductDetails,
     props: true
+  },
+  {
+    path: '/cart',
+    name: 'ShoppingCart',
+    component: ShoppingCart
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: Checkout
   }
 ]
 

@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#"><img src="@/assets/icons/Compare.png"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="mr-1" src="@/assets/icons/Bag.png">$0.00</a>
+                        <router-link to="/cart" class="nav-link"><img class="mr-1" src="@/assets/icons/Bag.png">$0.00</router-link>
                     </li>
                 </ul>
             </div>

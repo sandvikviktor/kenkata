@@ -40,9 +40,10 @@ export default {
     margin-bottom: 0.3em;
 }
 
-#shopCardDeck #hoverbar {
-    transform: scale(0.9);
-    top: 0.5em;
+#shopCardDeck #hoverbar, #mayAlsoLike #hoverbar  {
+    transform: scale(0.85);
+    top: -0.2em;
+    right: 0.5em;
 }
 
 

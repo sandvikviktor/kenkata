@@ -4,9 +4,6 @@
       <div v-if="product.image" class="product-card card p-0 position-relative h-100">
           <img :src="product.image" class="card-img-top img-fluid">
           <div v-if="!hover">
-            <!-- <span v-if="pills === 'new'" class="pills bg-kenkata-blue">{{ pills }}</span>
-            <span v-else-if="pills === 'hot'" class="pills bg-kenkata-red">{{ pills }}</span>
-            <span v-else-if="pills === '-30%'" class="pills bg-kenkata-green">{{ pills }}</span> -->
             <span class="badge" v-if="product.badges === 'new'"><New/></span>
             <span class="badge" v-if="product.badges === 'discount'"><Discount :discount="product.discount"/></span>
             <span class="badge" v-if="product.badges === 'hot'"><Hot/></span>
@@ -60,18 +57,7 @@ export default {
     max-height: 100%;
     width: 100%;
   }
-  /* .pills{
-    position: absolute;
-    left: 1.5em;
-    top: 1.5em;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-  } */
+
   .badge{
     position: absolute;
     left: 0;

@@ -166,7 +166,7 @@ export default {
             },
             {
                 title: "Circle pattern girls shirt",
-                badges: "new",
+                badges: "",
                 discount: "",
                 image: require('@/assets/images/products/mayalsolike/product2.png')
             },
@@ -182,8 +182,130 @@ export default {
                 discount: "-20%",
                 image: require('@/assets/images/products/mayalsolike/product4.png')
             },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                disount: "",
+                image: require('@/assets/images/products/mayalsolike/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/mayalsolike/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product4.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                disount: "",
+                image: require('@/assets/images/products/mayalsolike/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/mayalsolike/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/mayalsolike/product4.png')
+            }
         ],
-        relatedProducts: [],
+        relatedProducts: [
+            {
+                title: "New look mean's coat",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/relatedproducts/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product4.png')
+            },
+            {
+                title: "New look mean's coat",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/relatedproducts/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product4.png')
+            },
+            {
+                title: "New look mean's coat",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product1.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "new",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product2.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "discount",
+                discount: "-20%",
+                image: require('@/assets/images/products/relatedproducts/product3.png')
+            },
+            {
+                title: "Circle pattern girls shirt",
+                badges: "",
+                discount: "",
+                image: require('@/assets/images/products/relatedproducts/product4.png')
+            }
+
+        ],
         wishlist: []
     },
 
