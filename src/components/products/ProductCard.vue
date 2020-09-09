@@ -1,29 +1,32 @@
 <template>
   <div class="h-100" @mouseover="hover = true" @mouseleave="hover = false">
-    <router-link :to="{name: 'ProductDetails', params: {id: id}}">
-      <div v-if="product.image" class="product-card card p-0 position-relative h-100">
+
+    <div v-if="product.image" class="product-card card p-0 position-relative h-100">
+      <router-link :to="{name: 'ProductDetails', params: {id: id}}">
           <img :src="product.image" class="card-img-top img-fluid">
-          <div v-if="!hover">
-            <span class="badge" v-if="product.badges === 'new'"><New/></span>
-            <span class="badge" v-if="product.badges === 'discount'"><Discount :discount="product.discount"/></span>
-            <span class="badge" v-if="product.badges === 'hot'"><Hot/></span>
-          </div>
+      </router-link>
 
-          
-          <div v-if="!hover" class="position-absolute card-body bg-kenkata-blue-dark py-2">
-              <p class="text-white align-middle m-0">{{ product.title }}</p>
-          </div>
-
-          <!-- Mouseover Component -->
-          <transition 
-          enter-active-class="animate__animated animate__fadeIn animate__faster"
-          leave-active-class="animate__animated animate__fadeOut animate__faster">
-            <div v-if="hover" class="hover-card-body fadeIn">
-              <ProductCardHover :title="product.title" />
-            </div>  
-          </transition>       
+      <div v-if="!hover">
+        <span class="badge" v-if="product.badges === 'new'"><New/></span>
+        <span class="badge" v-if="product.badges === 'discount'"><Discount :discount="product.discount"/></span>
+        <span class="badge" v-if="product.badges === 'hot'"><Hot/></span>
+        <span class="brand bg-white" v-if="product.brand !== undefined"><img :src="product.brand" alt=""></span>
       </div>
-    </router-link>  
+
+      <div v-if="!hover" class="position-absolute card-body bg-kenkata-blue-dark py-2">
+          <p class="text-white align-middle m-0">{{ product.title }}</p>
+      </div>
+
+      <!-- Mouseover Component -->
+      <transition 
+      enter-active-class="animate__animated animate__fadeIn animate__faster"
+      leave-active-class="animate__animated animate__fadeOut animate__faster">
+        <div v-if="hover" class="hover-card-body fadeIn">
+          <ProductCardHover :product="product" :id="id" />
+        </div>  
+      </transition>      
+    </div>
+
   </div>
 </template>
 
@@ -63,6 +66,17 @@ export default {
     left: 0;
     top: 0;
     transform: scale(0.7);
+    z-index: 100;
+  }
+  .brand {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 12px 15px;
+    border-radius: 5px;
+  }
+  .brand img {
+    width: 100px;
   }
   .card-body {
     bottom: 0;

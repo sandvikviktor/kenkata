@@ -1,5 +1,5 @@
 <template>
-  <div id="blogcard" class="position-relative d-flex justify-content-center justify-content-lg-between ml-lg-2">
+  <div id="blogcard" class="position-relative d-flex justify-content-center justify-content-md-start justify-content-lg-between ml-lg-2">
     <div class="left-card bg-kenkata-dark-gray col-8 ml-lg-4 d-none d-md-block"></div>
     <div class="right-card card border text-white pt-0">
       <!-- Date -->
@@ -10,7 +10,7 @@
       <!-- Text -->
       <div class="card-text-body">
         <small class="py-1">By <u>{{name}}</u></small>
-        <p class="mt-2 pr-lg-5 text-kenkata-blue small">{{text}}</p>
+        <p class="my-2 pr-lg-5 text-kenkata-blue small">{{text}}</p>
         <small class="border py-1 px-2">Travel</small>
         <small class="border py-1 px-2 mx-2">Fashion</small>
         <button class="btn btn-kenkata-white d-block mt-3">Read More</button>  
@@ -27,7 +27,7 @@ export default {
 
 <style>
 #blogcard{
-  height: 380px;
+  height: 270px;
 }
 .left-card{
   border-radius: 5px;
@@ -35,11 +35,7 @@ export default {
 }
 .right-card {
   background-color: var(--kenkata-blue-dark);
-  position: absolute;
-  right: 3%;
-  top: 15%;
-  bottom: 15%;
-  left: 53%;
+  min-width: 300px;
 }
 #blogcard .btn {
   font-size: 0.8rem;
@@ -49,5 +45,32 @@ export default {
 }
 .date {
   width: 50px;
+}
+@media (min-width: 768px) {
+  #blogcard{
+    height: 380px;
+  }
+  .left-card {
+    margin-left: 7em;
+  }
+  .right-card {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 45%;
+  }
+}
+@media (min-width: 992px) {
+  .left-card {
+    margin-left: 0;
+  }
+  .right-card {
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    bottom: 15%;
+    left: 53%;
+    min-width: unset;
+  }
 }
 </style>

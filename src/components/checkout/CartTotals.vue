@@ -49,7 +49,7 @@
       </div>
       <!-- Proceed To Checkout -->
       <div class="mx-4 mt-2">
-        <button class="btn btn-block btn-kenkata-blue py-2 mx-4 m-auto">Proceed to checkout</button>
+        <router-link to="/checkout"><button class="btn btn-block btn-kenkata-blue py-2 mx-4 m-auto">Proceed to checkout</button></router-link>
       </div>      
     </div>
   </div>
@@ -78,5 +78,8 @@ export default {
 }
 input[type=radio] {
   transform: scale(0.9);
+}
+a:hover {
+  text-decoration: none;
 }
 </style>

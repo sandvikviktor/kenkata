@@ -4,19 +4,20 @@
           <img src="@/assets/icons/Arrow.png" alt="">
       </a>
       <div class="container py-5">          
-          <div class="d-flex py-3 justify-content-between">
-            <div class="col-lg-3">
+          <div class="d-md-flex py-3 justify-content-center justify-content-lg-between text-center text-md-left">
+
+            <div class="col-lg-3 mb-4">
                 <a href="#"><img class="mb-4" src="@/assets/LogoLight.png"></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim quam, ullamcorper vel tellus vitae, tempus fringilla lectus. Donec maximus justo eu nisl convallis iaculis. Aenean laoreet.</p>
-                <div class="d-flex align-items-center mt-4">
+                <div class="d-flex col-md-12 justify-content-center align-items-center mt-4 mx-auto mx-md-0 pl-0">
                     <h6 class="text-white font-weight-normal">Follow us</h6>
-                    <hr class="bg-kenkata-blue">
+                    <hr class="d-none d-md-block bg-kenkata-blue">
                 </div>
-                <SocialMedias/>
+                <SocialMedias class="mx-auto mx-md-0" />
             </div>
 
             <div class="col-lg-3">
-                <h5 class="mb-4">Contact Info</h5>
+                <h5 class="mt-5 mt-md-0 mb-4">Contact Info</h5>
                 <div>
                     <h6 class="h6-heading">Address:</h6>
                     <h6>Solna Business Park</h6>
@@ -35,7 +36,7 @@
             </div>
 
             <div class="col-lg-3">
-                <h5 class="mb-4">Useful Links</h5>
+                <h5 class="mt-5 mt-md-0 mb-md-4">Useful Links</h5>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms & Conditions</a>
                 <a href="#">Contact Us</a>
@@ -44,7 +45,7 @@
                 <a href="#">Returns</a>
             </div>
 
-            <div>
+            <div class="d-none d-lg-block">
                 <h5 class="mb-4 ml-1">Recent Instagram</h5>
                 <div class="square-container d-flex align-items-stretch flex-wrap">
                     <div class="col-4"></div>
@@ -63,10 +64,10 @@
           </div>
       </div>
 
-        <div class="footer-bottom-row py-3">
-            <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer-bottom-row pt-3 py-md-3 text-center text-md-start">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="m-0">Copyright 2020 KenKata</p>
-                <div class="payments d-flex">
+                <div class="payments d-flex mt-3 mt-md-0 justify-content-between px-0 px-sm-5 px-md-0">
                     <img src="@/assets/icons/payment/Mastercard.png">
                     <img src="@/assets/icons/payment/PayPal.png">
                     <img src="@/assets/icons/payment/Visa.png">
@@ -148,7 +149,18 @@ hr {
 .footer-bottom-row {
     background-color: #080C24;
 }
+.payments {
+    width: 100vw;
+    background: white;
+}
+@media (min-width: 768px) {
 .payments img{
     margin-left: 0.5em;
 }
+.payments {
+    width: unset;
+    background: none;
+}
+}
+
 </style>

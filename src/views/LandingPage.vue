@@ -50,13 +50,13 @@
             <h2 class="ml-3 mt-3">Off</h2>
           </div>
           <p>For new customer</p>
-          <button class="btn btn-kenkata-dark">Shop Now</button>
+          <button class="btn btn-kenkata-dark mt-3">Shop Now</button>
         </div>
         <div class="col-lg-5 d-none d-lg-block">
           <p
             class="text-white"
           >Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. Integer nulla nisi, aliquam at tellus a, viverra scelerisque purus. Nam pretium iaculis ultrices.</p>
-          <button class="btn btn-kenkata-white">Learn More</button>
+          <button class="btn btn-kenkata-white mt-3">Learn More</button>
         </div>
       </div>
     </div>
@@ -76,12 +76,14 @@
 
     <!-- Flash Sale -->
     <div id="flashSale" class="mb-custom bg-kenkata-blue-dark">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="col-lg-3 text-uppercase bg-kenkata-blue text-center py-5">
-          <h1 class="display-4 font-weight-bold">Flash Sale</h1>
-          <p class="font-weight-bold">Up to 50% </p>
+      <div class="h-100 container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+        <div class="flash-sale-left col-6 col-md-3 text-uppercase bg-kenkata-blue text-center py-3 py-md-5 align-self-md-start">
+          <h1 class="font-weight-bold">Flash Sale</h1>
+          <h6 class="font-weight-bold">Up to 50% off</h6>
         </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-end flex-column align-self-end">   
+
+        <div class="col-12 col-md-8 col-lg-6 d-flex align-items-center justify-content-end flex-column py-5 py-md-0">   
               <ul class="d-flex">
                 <li><span><h3 class="m-0 text-kenkata-blue">7</h3><small>Days</small></span></li>
                 <li><span><h3 class="m-0 text-kenkata-blue">23</h3><small>Hours</small></span></li>
@@ -89,7 +91,8 @@
                 <li><span><h3 class="m-0 text-kenkata-blue">12</h3><small>Seconds</small></span></li>
               </ul>
               <button class="btn btn-kenkata-white mt-3">Show Now</button>         
-        </div>        
+        </div>  
+
       </div>
     </div>
 
@@ -102,7 +105,7 @@
       />
 
       <div class="container mx-auto mt-5 top-sellers-grid">  
-        <ProductCard v-for="(product, index) in topSellers" :key="index" :product="product" :class="'grid-' + index"/>
+        <ProductCard class="my-3 my-md-0 card-height-sm card-height-md" v-for="(product, index) in topSellers" :key="index" :product="product" :class="'grid-' + index"/>
       </div>
     </div>
     
@@ -190,44 +193,75 @@ export default {
   }
 }
 
-#flashSale {
-  min-height: 400px;
-}
+
+/* Flashsale */
+
 #flashSale li {
   border: 2px dotted var(--kenkata-blue);
   border-radius: 50%;
-  margin: 0 0.7em;
+  margin: 0 0.3em;  
+}
+.flash-sale-left {
+  min-width: 200px;
+  max-width: 220px;
 }
 #flashSale span {
   background-color: white;
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 #flashSale li small{
   margin-top: -5px;
 }
+@media (min-width: 768px) {
+  #flashSale {
+    height: 400px;
+  }
+  #flashSale li {
+    margin: 0 0.7em;
+  }
+  #flashSale span {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .flash-sale-left h1 {
+    font-size: 3rem;
+  }
+}
+
 
 /* Top Sellers */
-/* .top-grid-1 { grid-area: grid-1;}
-.top-grid-2 { grid-area: grid-2}
-.top-grid-3 { grid-area: grid-3} */
-
 .grid-0 { grid-area: grid-1;}
 .grid-1 { grid-area: grid-2}
 .grid-2 { grid-area: grid-3}
 
-.top-sellers-grid {
-  height: 100%;
-  display: grid;
-  grid-template-areas: 'grid-1 grid-2'
-                       'grid-1 grid-3';
-  grid-template-rows: 50% 50%;
-  grid-gap: 10px;
+.card-height-sm {
+  height: 200px !important;
 }
+
+@media (min-width: 768px) {
+  .top-sellers-grid {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'grid-1 grid-2'
+                        'grid-1 grid-3';
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+  }
+  .card-height-sm {
+    height: 100% !important;
+  }
+}
+
+
+
+
+
 </style>

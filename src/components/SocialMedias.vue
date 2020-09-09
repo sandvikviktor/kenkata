@@ -1,5 +1,5 @@
 <template>
-  <div id="socialmedias" class="d-flex">
+  <div id="socialmedias" class="d-flex col-7 col-lg-12 justify-content-center justify-content-lg-start pl-0">
     <a class="fb nav-link p-0" href="#"><i class="nav-link fab fa-facebook-f"></i></a>
     <a class="twitter nav-link p-0" href="#"><i class="nav-link fab fa-twitter"></i></a>
     <a class="insta nav-link p-0" href="#"><i class="fab fa-instagram"></i></a>
@@ -21,8 +21,10 @@ i{
 a{
   color: white;
 }
-footer #socialmedias{
-  margin-left: -0.5em;
+@media (min-width: 768px) {
+  footer #socialmedias{
+    margin-left: -0.5em !important;
+  }
 }
 footer #socialmedias a{
   color: var(--kenkata-blue);
@@ -30,6 +32,4 @@ footer #socialmedias a{
 footer #socialmedias a:hover{
   color: white
 }
-
-
 </style>

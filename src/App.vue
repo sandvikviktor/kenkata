@@ -11,7 +11,7 @@
 </template>
 
 <script>
-
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Navbar from '@/components/navigation/Navbar.vue'
 export default {
   components: {
