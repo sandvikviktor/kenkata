@@ -1,8 +1,9 @@
 <template>
   <div>
     <NavTopRow class="d-none d-lg-block"/>
-    <NavMiddleRow class="d-none d-lg-block" />
+    <NavMiddleRow class="d-none d-lg-block" /> <!-- Desktop -->    
     <NavBottomRow/>
+    <NavMiddleRow class="d-block d-lg-none" /> <!-- Mobile -->
   </div>
 </template>
 

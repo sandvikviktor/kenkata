@@ -59,6 +59,12 @@ export default {
     object-fit: contain;
     max-height: 100%;
     width: 100%;
+    height: 200px;
+  }
+  @media(min-width: 768px) {
+    .top-sellers-grid .card-img-top {
+      height: unset;
+    }
   }
 
   .badge{

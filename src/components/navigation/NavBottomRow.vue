@@ -1,6 +1,6 @@
 <template>
   <div id="navBottom" class="bg-white">
-    <div class="container navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center py-lg-0">
+    <div class="container navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center pt-3 pb-0 pt-lg-0">
         
         <a class="navbar-brand mb-1 d-lg-none" href="#"><img src="@/assets/Logo.png" alt=""></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

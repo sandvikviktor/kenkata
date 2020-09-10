@@ -1,11 +1,11 @@
 <template>
   <div class="features-card card c-none">
-      <div class="card-body d-flex align-items-center p-xl-4">
+      <div class="card-body d-flex align-items-center pt-xl-3 pb-xl-4 px-xl-4">
           <div class="mr-4">
               <img class="card-image" :src="feature.icon">
           </div>
           <div>
-              <p class="card-title mb-2">{{ feature.title }}</p>
+              <p class="card-title mb-1">{{ feature.title }}</p>
               <p class="card-text">{{ feature.text }}</p>
           </div>
       </div>
