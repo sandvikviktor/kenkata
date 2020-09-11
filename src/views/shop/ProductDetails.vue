@@ -16,10 +16,10 @@
       <!-- Price Row -->
       <div class="d-flex align-items-center">
         <h5 class="m-0 text-kenkata-blue mr-3">$190.00</h5>
-        <small class="pt-1"><del class="text-muted mr-4">$220.00</del>
-        <img class="icon mb-1" src="@/assets/icons/InStock.png" alt="">
-        In Stock
-        </small>
+        <p class="pt-1"><del class="text-muted mr-4">$220.00</del></p>
+        <img class="icon mb-1 mr-1" src="@/assets/icons/InStock.png" alt="">
+        <p>In Stock</p>
+        
       </div>
 
       <!-- Options -->
@@ -33,26 +33,26 @@
         </button>
 
         <!-- Colors/Compare/Wishlist -->
-        <div class="d-flex">
+        <div class="d-flex options-img">
           <img src="@/assets/icons/ColorCircle.png">
-          <img class="mx-3" src="@/assets/icons/CompareCircle.png">
+          <img class="mx-2" src="@/assets/icons/CompareCircle.png">
           <img src="@/assets/icons/HeartCircle.png">
         </div>
       </div>
 
       <!-- Category -->
-      <small>Category:<span class="text-kenkata-blue"> Shoes</span></small>
+      <p>Category:<span class="text-kenkata-blue"> Shoes</span></p>
 
       <!-- Tags -->
-      <small class="tags d-block my-3">Tags: 
+      <p class="tags d-block my-3">Tags: 
         <span class="ml-2">Fashion</span>
         <span class="mx-1">Shoes</span>
         <span>Sneakers</span>
-      </small>
+      </p>
 
       <!-- Share -->
       <div class="details-socials d-flex">
-        <span class="mr-3"><small>Share:</small></span>
+        <span class="mr-3"><p>Share:</p></span>
         <DetailsSocials />
       </div>
 
@@ -132,7 +132,8 @@
   </div>
 
   <!-- Brands -->
-  <Brands />
+  <BrandCarousel />
+
 
   <!-- Footer -->
   <FooterKenkata />
@@ -148,7 +149,7 @@ import FeaturesCardDeck from '@/components/features/FeaturesCardDeck'
 import YouMayAlsoLike from '@/components/carousels/YouMayAlsoLike'
 import RelatedProducts from '@/components/carousels/RelatedProducts'
 import SubscribeNow from "@/components/SubscribeNow";
-import Brands from "@/components/Brands"
+import BrandCarousel from "@/components/carousels/BrandCarousel"
 import FooterKenkata from "@/components/FooterKenkata"
 import Heading from '@/components/Heading'
 import Quantity from '@/components/Quantity'
@@ -156,7 +157,7 @@ export default {
   name: 'ProductDetails',
   props: ["id"],  
   components: {
-    ProductTopRow, DetailsCarousel, DetailsSocials, ProductReviews, FeaturesCardDeck, Heading, Quantity, YouMayAlsoLike, RelatedProducts, SubscribeNow, Brands, FooterKenkata
+    ProductTopRow, DetailsCarousel, DetailsSocials, ProductReviews, FeaturesCardDeck, Heading, Quantity, YouMayAlsoLike, RelatedProducts, SubscribeNow, BrandCarousel, FooterKenkata
   }
 }
 </script>
@@ -168,7 +169,9 @@ export default {
 .icon {
   transform: scale(0.9);
 }
-
+.options-img img {
+  transform: scale(0.9);
+}
 .btn-kenkata-blue {
   text-transform: unset;
 }

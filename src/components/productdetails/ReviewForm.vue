@@ -2,7 +2,7 @@
     <div>
         <form id="reviewForm" class="bg-kenkata-gray-light p-3 was-validated">
             <h5 class="text-kenkata-blue">Add a review</h5>
-            <small class="text-muted">Your email address will not be published. Required fields are marked *</small>
+            <p class="text-muted">Your email address will not be published. Required fields are marked *</p>
             <p class="mt-3 mb-2">Your rating<span class="text-kenkata-blue mr-4">*</span>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -25,12 +25,13 @@
                 <label for="email">Email<span class="text-kenkata-blue">*</span></label>
                 <input type="email" class="form-control" id="name" autocomplete="off" required>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" value="">
                 <label class="form-check-label" for="savedetails">
                     Save my name, email and website in this browser for the next time I comment.
                 </label>
             </div>
+            <button type="submit" class="btn btn-kenkata-blue">Submit</button>
         </form>
     </div>
 </template>
@@ -46,7 +47,7 @@ form {
     border-radius: 5px;
 }
 form p, label, .form-control {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     border: none;
     box-shadow: none;
 }
@@ -60,5 +61,8 @@ textarea {
     border: none;
     background-image: none;
     box-shadow: none;
+}
+button {
+    padding: 10px 20px;
 }
 </style>

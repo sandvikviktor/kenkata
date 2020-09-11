@@ -1,7 +1,7 @@
 <template>
     <li class="d-flex justify-content-between mb-2">
-        <small><a class="shop-link" href="">{{title}}</a></small>
-        <small class="shop-pills">{{quantity}}</small>
+        <p><a class="shop-link" href="">{{title}}</a></p>
+        <p class="shop-pills">{{quantity}}</p>
     </li>
 </template>
 

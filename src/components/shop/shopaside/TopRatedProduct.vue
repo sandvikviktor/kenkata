@@ -2,7 +2,7 @@
   <div class="d-flex align-items-center">
       <img :src="image">
       <div>
-          <small>{{title}}</small>
+          <p>{{title}}</p>
             <div class="d-flex mt-1">
                 <i class="fas fa-star text-kenkata-blue"></i>
                 <i class="fas fa-star text-kenkata-blue"></i>
@@ -10,7 +10,7 @@
                 <i class="fas fa-star text-kenkata-blue"></i>
                 <i class="fas fa-star text-kenkata-blue"></i>
             </div>
-            <small class="font-weight-bold">{{price}}</small>
+            <p class="font-weight-bold">{{price}}</p>
           
       </div>
   </div>

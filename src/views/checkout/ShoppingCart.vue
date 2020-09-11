@@ -10,7 +10,7 @@
             <CouponCode />
           </div>
           <div>
-            <button class="btn btn-kenkata-dark">Update Cart</button>
+            <button class="btn btn-kenkata-dark update-cart">Update Cart</button>
           </div>
         </div>
       </div>
@@ -18,21 +18,21 @@
       <CartTotals />
     </div>
 
-  <!-- You May Also Like -->
-  <div class="container mb-custom">
-    <Heading 
-      first="you may"
-      second="also like"
-      text=""
-      />
-    <!-- Carousel -->
-    <div class="mt-5">
-      <YouMayAlsoLike />
+    <!-- You May Also Like -->
+    <div class="container mb-custom">
+      <Heading 
+        first="you may"
+        second="also like"
+        text=""
+        />
+      <!-- Carousel -->
+      <div class="mt-5">
+        <YouMayAlsoLike />
+      </div>
     </div>
-  </div>
 
-  <!-- Brands -->
-  <Brands />
+    <!-- Brands -->
+    <BrandCarousel />
 
     <!-- Footer -->
     <FooterKenkata />
@@ -46,15 +46,19 @@ import CartTotals from '@/components/checkout/CartTotals'
 import CouponCode from '@/components/checkout/CouponCode'
 import Heading from '@/components/Heading'
 import YouMayAlsoLike from '@/components/carousels/YouMayAlsoLike'
-import Brands from '@/components/Brands'
+import BrandCarousel from "@/components/carousels/BrandCarousel"
 import FooterKenkata from '@/components/FooterKenkata'
 export default {
   components: {
-    Toprow, ProductList, CartTotals, CouponCode, Heading, YouMayAlsoLike, Brands, FooterKenkata
+    Toprow, ProductList, CartTotals, CouponCode, Heading, YouMayAlsoLike, BrandCarousel, FooterKenkata
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+.update-cart {
+  font-size: 17px !important;
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
+}
 </style>

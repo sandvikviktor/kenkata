@@ -13,11 +13,11 @@
     </ul>
 
     <!-- Filter by Price -->
-    <p class="shop-heading">Filter by Price</p>
+    <p class="shop-heading mb-3">Filter by Price</p>
     <div id="pricefilter" class="border"></div>
     <span class="d-flex justify-content-between mt-4 pb-3">
-        <small>Price: $0 + $10,000</small>
-        <small class="filter">Filter</small>              
+        <p>Price: $0 + $10,000</p>
+        <p class="filter">Filter</p>              
     </span>
 
     <!-- Filter by Color -->
@@ -61,8 +61,8 @@
 
     <!-- Product Status -->
     <p class="shop-heading">Product Status</p>
-    <span class="d-flex align-items-center"><input type="checkbox" id="onSale"><small class="ml-2">On Sale</small></span>
-    <span class="d-flex align-items-center mt-1"><input type="checkbox" id="onSale"><small class="ml-2">In Stock</small></span>
+    <div class="d-flex align-items-center"><input type="checkbox" id="onSale"><p class="ml-2">On Sale</p></div>
+    <div class="d-flex align-items-center mt-1"><input type="checkbox" id="inStock"><p class="ml-2">In Stock</p></div>
 
     <!-- Top Rated Products -->
     <p class="shop-heading mt-4">Top Rated Products</p>
@@ -103,7 +103,7 @@ export default {
     }
     .shop-heading {
         color: var(--kenkata-blue);
-        font-weight: 500;
+        font-weight: 600;
         margin-top: 1em;
         margin-bottom: 0.5em;
     }
@@ -111,11 +111,11 @@ export default {
         background: var(--kenkata-blue);
         color: white;
         padding: 0 16px;
-        border-radius: 10px;
+        border-radius: 12px;
     }
     .filter-brand img {
         border: 1px solid var(--kenkata-gray-lighter);
-        width: 85px;
+        width: 90px;
         padding: 4px 10px;
         border-radius: 5px;
     }

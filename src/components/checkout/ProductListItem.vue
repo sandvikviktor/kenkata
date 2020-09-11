@@ -7,13 +7,13 @@
         <span class="img-box d-flex justify-content-center align-items-center ml-3 mr-2">
             <img class="img-fluid" :src="require('@/assets/images/products/product1.png')" alt="">
         </span>
-        <small>Women smart high heel shoe</small>                
+        <p>Women smart high heel shoe</p>                
     </div>
 
     <div class="d-flex align-items-center col-lg-5">
-        <small class="">$190.00</small>
+        <p class="">$190.00</p>
         <Quantity class="ml-4 mr-5"/>
-        <small class="text-kenkata-blue">$380.00</small>
+        <p class="text-kenkata-blue font-weight-bold">$380.00</p>
     </div>          
   </li>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div id="testimonialsCarousel" class="position-relative">
+  <div id="testimonialsCarousel" class="position-relative mb-custom">
     <carousel :items="1" :nav="false">
       <TestimonialsCard />
       <TestimonialsCard />

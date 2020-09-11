@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- New Customer Header -->
-    <div id="newCustomerShop" class="mb-custom bg-kenkata-blue-dark d-lg-flex text-center text-lg-left py-4">
+    <div id="newCustomerShop" class="bg-kenkata-blue-semidark d-lg-flex text-center text-lg-left">
       <div class="container d-lg-flex justify-content-between align-items-center text-white">
         <div class="new-customer-left py-5">
-            <h3>New Customer</h3>
-            <h3>Can Get <span class="text-kenkata-blue">30% Off</span></h3>
+            <h2>New Customer</h2>
+            <h2>Can Get <span class="text-kenkata-blue">30% Off</span></h2>
             <button class="btn btn-kenkata-white mt-3">Learn More</button>
         </div>
         <div class="new-customer-right d-none d-lg-block position-relative">
@@ -37,7 +37,7 @@
     </div>
 
     <!-- Brands -->
-    <Brands />
+    <BrandCarousel />
 
     <!-- Footer -->
     <FooterKenkata />    
@@ -51,29 +51,39 @@ import ShopTopRow from '@/components/shop/toprow/ShopTopRow'
 import ShopAside from '@/components/shop/ShopAside'
 import ShopCardDeck from '@/components/shop/ShopCardDeck'
 import SubscribeNow from '@/components/SubscribeNow'
-import Brands from "@/components/Brands"
+import BrandCarousel from "@/components/carousels/BrandCarousel"
 import FooterKenkata from "@/components/FooterKenkata"
 export default {
     components: {
         New, Discount,
-        ShopTopRow, ShopAside, ShopCardDeck, SubscribeNow, Brands, FooterKenkata
+        ShopTopRow, ShopAside, ShopCardDeck, SubscribeNow, BrandCarousel, FooterKenkata
     }
 }
 </script>
 
-<style>
-    .new-customer-img {
-        transform: scale(0.8);
-        margin-right: -3em;
-    }
-    .new-customer-right .new {
-        position: absolute;
-        left: 26%;
-        top: 6%;
-    }
-    .new-customer-right .discount {
-        position: absolute;
-        right: 15%;
-        top: 24%;
-    }
+<style scoped>
+#newCustomerShop {
+    padding: 3em 0;
+    margin-bottom: 7em;
+}
+.new-customer-img {
+    transform: scale(0.8);
+    margin-right: -3em;
+}
+.new-customer-left h2{
+    font-weight: 600;
+}
+.new-customer-right .new {
+    position: absolute;
+    left: 26%;
+    top: 6%;
+}
+.new-customer-right .discount {
+    position: absolute;
+    right: 15%;
+    top: 24%;
+}
+button {
+    font-size: 17px;
+}
 </style>

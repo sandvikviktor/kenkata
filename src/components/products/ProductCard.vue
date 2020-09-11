@@ -13,7 +13,7 @@
         <span class="brand bg-white" v-if="product.brand !== undefined"><img :src="product.brand" alt=""></span>
       </div>
 
-      <div v-if="!hover" class="position-absolute card-body bg-kenkata-blue-dark py-2">
+      <div v-if="!hover" class="position-absolute card-body bg-kenkata-blue-dark">
           <p class="text-white align-middle m-0">{{ product.title }}</p>
       </div>
 
@@ -89,6 +89,10 @@ export default {
     width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 0.7em 1.5em;
+  }
+  .card-body p {
+    font-size: 1rem;
   }
   .hover-card-body {
     background: #0e153dd8;

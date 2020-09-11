@@ -33,6 +33,7 @@ html, body {
     --kenkata-blue: #20D3C2;
     --kenkata-blue-light: #20d3c115;
     --kenkata-blue-dark: #0E153D;
+    --kenkata-blue-darker: rgba(14, 21, 61, 0.87);
     --kenkata-green: #64CB83;
     --kenkata-red: #FE4545;
     --kenkata-gray: #AAAAAA;
@@ -69,6 +70,9 @@ p {
 }
 .bg-kenkata-blue-dark {
   background-color: var(--kenkata-blue-dark) !important;
+}
+.bg-kenkata-blue-semidark {
+  background-color: var(--kenkata-blue-darker)
 }
 .bg-kenkata-dark-gray {
   background-color: #cccccc

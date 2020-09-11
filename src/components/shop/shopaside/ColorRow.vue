@@ -5,9 +5,9 @@
                 <input type="checkbox" id="colorcheck" v-model="colorCheck">
                 <span :class="color" class="checkmark"></span>            
             </label>
-            <small class="shop-link text-capitalize">{{color}}</small>
+            <p class="shop-link text-capitalize ml-1">{{color}}</p>
         </div>
-        <small :class="{'bg-kenkata-blue' : colorCheck === true }" class="shop-pills">{{quantity}}</small>
+        <p :class="{'bg-kenkata-blue' : colorCheck === true }" class="shop-pills">{{quantity}}</p>
     </li>
 </template>
 
@@ -64,8 +64,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   border-radius: 3px;
   z-index: 2;
 }

@@ -75,7 +75,7 @@
     </div>
 
     <!-- Flash Sale -->
-    <div id="flashSale" class="mb-custom bg-kenkata-blue-dark">
+    <div id="flashSale" class="mb-custom bg-kenkata-blue-semidark">
       <div class="h-100 container d-flex flex-column flex-md-row justify-content-between align-items-center">
 
         <div class="flash-sale-left col-6 col-md-3 text-uppercase bg-kenkata-blue text-center py-3 py-md-5 align-self-md-start">
@@ -110,7 +110,7 @@
     </div>
     
     <!-- Testimonials -->
-    <div class="mb-custom bg-kenkata-blue-dark w-100 text-center pb-5">
+    <div class="mb-custom bg-kenkata-blue-semidark w-100 text-center pb-5">
       <img class="" src="@/assets/icons/Quote.png" alt="">
       <div class="container mt-5">
         <TestimonialsCarousel />
@@ -136,7 +136,7 @@
     </div>
 
     <!-- Brands -->
-    <Brands />
+    <BrandCarousel />
 
     <!-- Footer -->
     <FooterKenkata />
@@ -155,8 +155,8 @@ import TestimonialsCarousel from "@/components/carousels/testimonials/Testimonia
 import LatestBlog from "@/components/carousels/latestblog/LatestBlog";
 import SubscribeNow from "@/components/SubscribeNow";
 import ProductCard from "@/components/products/ProductCard";
-import Brands from "@/components/Brands"
-import FooterKenkata from "@/components/FooterKenkata"
+import BrandCarousel from "@/components/carousels/BrandCarousel";
+import FooterKenkata from "@/components/FooterKenkata";
 import { mapGetters } from "vuex";
 export default {
   name: "LandingPage",
@@ -172,7 +172,7 @@ export default {
     LatestBlog,
     SubscribeNow,
     ProductCard,
-    Brands,
+    BrandCarousel,
     FooterKenkata
   },
   computed: {

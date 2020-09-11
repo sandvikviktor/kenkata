@@ -1,6 +1,6 @@
 <template>
   <div id="couponBox">
-      <small>If you have a coupon code, please apply it below</small>
+      <p>If you have a coupon code, please apply it below</p>
         <form class="form-inline position-relative mt-3 mb-2">
             <input class="form-control bg-transparent" type="text" placeholder="Coupon code">
             <button class="btn bg-kenkata-blue position-absolute text-white px-3" type="submit">Apply Coupon</button>

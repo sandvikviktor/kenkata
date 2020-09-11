@@ -1,5 +1,5 @@
 <template>
-  <div class="features-card card c-none">
+  <div class="card features-card">
       <div class="card-body d-flex align-items-center pt-xl-3 pb-xl-4 px-xl-4">
           <div class="mr-4">
               <img class="card-image" :src="feature.icon">
@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+.features-card {
+    cursor: unset !important;
+}
 #headerFeatures .features-card {
     margin-top: 20px;
 }
@@ -28,7 +31,6 @@ export default {
 }
 .card-text {
     font-weight: 400;
-    font-size: 0.8rem;
 }
 .card:hover .card-title {
     color: white;
