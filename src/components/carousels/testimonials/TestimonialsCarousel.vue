@@ -5,8 +5,8 @@
       <TestimonialsCard />
       <TestimonialsCard />
 
-      <template slot="prev"><span class="owl-prev"><i class="fas fa-chevron-left"></i></span></template>
-      <template slot="next"><span class="owl-next"><i class="fas fa-chevron-right"></i></span></template>
+      <template slot="prev"><span class="d-none d-xl-flex owl-prev"><i class="fas fa-chevron-left"></i></span></template>
+      <template slot="next"><span class="d-none d-xl-flex owl-next"><i class="fas fa-chevron-right"></i></span></template>
     </carousel>
   </div>
 </template>

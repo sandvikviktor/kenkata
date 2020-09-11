@@ -73,6 +73,7 @@ export default {
 </script>
 
 <style>
+
 svg:hover .hoverbar-svg {
     stroke: var(--kenkata-blue);
 }
@@ -85,6 +86,12 @@ svg:hover .hoverbar-svg {
     background: white;
     border-radius: 20px;
     z-index: 50;
+}
+@media (max-width: 992px) {
+    #hoverbar {
+        transform: scale(0.7);
+        top: -1em;
+    }
 }
 #tooltip-colors i {
     height: 18px;
@@ -103,12 +110,13 @@ svg:hover .hoverbar-svg {
     margin-top: 1em;
     margin-bottom: 0.3em;
 }
-
 #shopCardDeck #hoverbar, #mayAlsoLike #hoverbar  {
     transform: scale(0.85);
     top: -0.2em;
     right: 0.5em;
 }
+
+
 
 .tooltip-class {
     left: -10px !important;
@@ -144,5 +152,7 @@ svg:hover .hoverbar-svg {
 .arrow::before {
     border-left-color: var(--kenkata-blue) !important;
 }
+
+
 
 </style>

@@ -26,8 +26,5 @@ export default {
 </script>
 
 <style>
-#latestblogCarousel {
-  
-}
 
 </style>

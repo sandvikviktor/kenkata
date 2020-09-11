@@ -2,7 +2,7 @@
 <div>
     <div class="d-flex justify-content-center border-bottom">
         <nav class="container navbar navbar-expand-lg navbar-light bg-white pb-3 py-lg-4 d-flex justify-content-between">
-            <a class="navbar-brand mb-1 d-none d-lg-block" href="#"><img src="@/assets/Logo.png"></a>
+            <router-link to="/" class="navbar-brand mb-1 d-none d-lg-block" href="#"><img src="@/assets/Logo.png"></router-link>
 
             <div class="d-none d-md-block">
                 <form class="form-inline my-lg-0">

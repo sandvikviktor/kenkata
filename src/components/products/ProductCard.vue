@@ -84,6 +84,12 @@ export default {
   .brand img {
     width: 100px;
   }
+  @media (max-width: 992px) {
+    .brand {
+        transform: scale(0.8);
+        left: 0.5em;
+    }
+}
   .card-body {
     bottom: 0;
     width: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div id="topNews" class="position-relative">
+  <div id="newArrivals" class="position-relative">
       <carousel :margin="25" :responsive="{0:{items:1,nav:false,dots:false},760:{items:2,nav:false,dots:true},1000:{items:3,nav:false,dots:true}}">
         <div class="carousel-height" v-for="(product, index) in newArrivals" :key="index">
           <ProductCard :product="product" :id="index" />
@@ -37,11 +37,11 @@ export default {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-#topNews .owl-prev, #featuredProducts .owl-prev, #latestblogCarousel .owl-prev {  
+#newArrivals .owl-prev, #featuredProducts .owl-prev, #latestblogCarousel .owl-prev {  
   left: -7%;
   top: 40%;
 }
-#topNews .owl-next, #featuredProducts .owl-next, #latestblogCarousel .owl-next {
+#newArrivals .owl-next, #featuredProducts .owl-next, #latestblogCarousel .owl-next {
   right: -7%;
   top: 40%;
 }
@@ -52,16 +52,16 @@ export default {
     margin-right: 5px;
 }
 .owl-next i, .owl-prev i {
-  font-size: 2rem;
-  font-weight: 200;
-  color: #E3E3E3;
+  font-size: 2rem ;
+  font-weight: 200 !important;
+  color: #E3E3E3 !important;
 }
 .owl-next:hover, .owl-prev:hover {
   background-color: var(--kenkata-blue);
   border-color: transparent;
   cursor: pointer;
 }
-#topNews .owl-dot, #featuredProducts .owl-dot {
+#newArrivals .owl-dot, #featuredProducts .owl-dot {
   margin-top: 0.8em;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {

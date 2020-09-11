@@ -2,11 +2,7 @@
     <div class="d-flex flex-column align-items-center text-kenkata-blue">
         <div class="testimonials-img"></div>
         <span class="d-flex mt-5 mb-4">
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
+            <Rating />
         </span>
         <h6 class="text-uppercase">Johny Wesmullar</h6>
         <small class="text-white">CEO, Biotech Inc</small>
@@ -15,8 +11,11 @@
 </template>
 
 <script>
+import Rating from '@/components/Rating'
 export default {
-
+    components: {
+        Rating
+    }
 }
 </script>
 

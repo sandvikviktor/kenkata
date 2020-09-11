@@ -2,70 +2,70 @@
   <div id="navBottom" class="bg-white">
     <div class="container navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center pt-3 pb-0 pt-lg-0">
         
-        <a class="navbar-brand mb-1 d-lg-none" href="#"><img src="@/assets/Logo.png" alt=""></a>
+        <router-link to="/" class="navbar-brand mb-1 d-lg-none"><img src="@/assets/Logo.png" alt=""></router-link>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="d-lg-flex m-0 align-items-center">
-            <li class="py-1 nav-item dropdown bg-kenkata-blue d-none d-lg-block">
-                <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <img class="mb-1 mr-2" src="@/assets/icons/Hamburger.png" alt="">Browse Categories<i class="fas fa-chevron-down mx-1 ml-5"></i></a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item ml-lg-3">
-                <router-link to="/" exact class="nav-link">Home</router-link>
-            </li>
-            <li class="nav-item dropdown">
-                <router-link to="/shop" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Shop<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></router-link>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-            </li>
-        </ul>
+          <ul class="d-lg-flex m-0 align-items-center">
+              <li class="py-1 nav-item dropdown bg-kenkata-blue d-none d-lg-block">
+                  <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <img class="mb-1 mr-2" src="@/assets/icons/Hamburger.png" alt="">Browse Categories<i class="fas fa-chevron-down mx-1 ml-5"></i></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+              </li>
+              <li class="nav-item ml-lg-3">
+                  <router-link to="/" exact class="nav-link">Home</router-link>
+              </li>
+              <li class="nav-item dropdown">
+                  <router-link to="/shop" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Shop<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></router-link>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages<i class="fas fa-chevron-down mx-1 text-kenkata-blue"></i></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+              </li>
+          </ul>
         </div>
 
 
@@ -85,8 +85,6 @@ export default {
     let desktop = window.matchMedia("(min-width: 992px")
     if (desktop.matches) {
       $('#navBottom .nav-link').removeAttr('data-toggle');
-    } else {
-      // $('#navBottom .nav-link').setAttr('data-toggle', 'dropdown');
     }
   }
 }
@@ -103,6 +101,9 @@ export default {
   position: absolute;
   width: 10%;
   border-bottom: 4px solid var(--kenkata-blue);
+}
+.navbar-brand::after {
+  display: none;
 }
 .dropdown-toggle::after {
   border-top: none;
