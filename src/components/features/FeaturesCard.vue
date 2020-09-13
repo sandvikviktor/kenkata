@@ -1,6 +1,6 @@
 <template>
   <div class="card features-card">
-      <div class="card-body d-flex align-items-center pt-xl-3 pb-xl-4 px-xl-4">
+      <div class="card-body d-flex align-items-center pl-xl-4">
           <div class="mr-4">
               <img class="card-image" :src="feature.icon">
           </div>
@@ -18,11 +18,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@media (min-width: 992px) {
+    .features-card {
+        height: 90%;
+    }
+}
 .features-card {
     cursor: unset !important;
 }
-#headerFeatures .features-card {
+.features-card {
     margin-top: 20px;
 }
 .card-title{

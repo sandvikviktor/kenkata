@@ -4,11 +4,11 @@
             <h5 class="text-kenkata-blue">Add a review</h5>
             <p class="text-muted">Your email address will not be published. Required fields are marked *</p>
             <p class="mt-3 mb-2">Your rating<span class="text-kenkata-blue mr-4">*</span>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star text-kenkata-blue"></i>
+                <i class="fas fa-star text-kenkata-blue"></i>
+                <i class="fas fa-star text-kenkata-blue"></i>
+                <i class="fas fa-star text-kenkata-blue"></i>
+                <i class="far fa-star text-kenkata-blue"></i>
             </p>
             <div class="mb-3">
                 <label for="review">Your review<span class="text-kenkata-blue">*</span></label>
@@ -38,7 +38,7 @@
 
 <script>
 export default {
-
+    
 }
 </script>
 

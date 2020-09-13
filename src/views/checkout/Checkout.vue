@@ -4,7 +4,7 @@
     <div class="container d-flex mb-custom">
       <!-- Billing Details -->
       <div class="checkout-left col-lg-6">
-        <div class="mb-3"><span>Returning customer?<router-link to="/login" class="ml-2 text-kenkata-blue">Click here to login</router-link></span></div>
+        <div class="mb-3"><span>Returning customer?<router-link to="/account" class="ml-2 text-kenkata-blue">Click here to login</router-link></span></div>
         <div class="mb-3"><span>Have a coupon?<a href="#couponCollapse" data-toggle="collapse" role="button" class="ml-2 text-kenkata-blue" aria-expanded="false" aria-controls="couponCode">Click here to enter your code</a></span></div>
         <div class="col-10 pl-0 collapse" id="couponCollapse">
           <CouponCode />

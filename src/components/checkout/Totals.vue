@@ -29,12 +29,12 @@
           </p>
         </div>
         <!-- Shopping to AL. -->
-        <div>
-          <!-- <p>Shipping to <span class="text-muted">AL.</span></p> -->
+        <div v-if="currentRoute === 'ShoppingCart'">
+          <p>Shipping to <span class="text-muted">AL.</span></p>
         </div>
         <!-- Change address -->
-        <div>
-          <!-- <p>Change address</p> -->
+        <div v-if="currentRoute === 'ShoppingCart'">
+          <p>Change address</p>
         </div>
       </div>        
     </div>
@@ -48,7 +48,11 @@
 
 <script>
 export default {
-
+  computed: {
+    currentRoute() {
+      return this.$route.name;
+    }
+  }  
 }
 </script>
 

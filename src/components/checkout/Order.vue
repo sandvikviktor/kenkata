@@ -29,8 +29,8 @@
 
         <!-- Terms and conditions  -->
         <div class="custom-control custom-checkbox py-3">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">I have read and agree to the website <span class="text-kenkata-blue">terms and conditions *</span></label>
+            <input type="checkbox" class="custom-control-input" id="agreeCheck">
+            <label class="custom-control-label" for="agreeCheck">I have read and agree to the website <span class="text-kenkata-blue">terms and conditions *</span></label>
         </div>
 
         <!-- Place Order -->

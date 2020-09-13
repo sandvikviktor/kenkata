@@ -65,8 +65,8 @@
       <!-- Create an account? -->
       <div class="form-group py-4 border-bottom">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+          <input class="form-check-input" type="checkbox" id="createAccount">
+          <label class="form-check-label" for="createAccount">
             Create an account?
           </label>
         </div>
@@ -74,16 +74,16 @@
       <!-- Ship To A Different Address? -->
       <div class="form-group py-2">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label text-uppercase font-weight-bold" for="gridCheck">
+          <input class="form-check-input" type="checkbox" id="shipDifferent">
+          <label class="form-check-label text-uppercase font-weight-bold" for="shipDifferent">
             Ship to a different address?
           </label>
         </div>
       </div>
       <!-- Order notes -->
       <div class="form-group form-textarea">
-        <label for="exampleFormControlTextarea1">Order notes (optional)</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+        <label for="orderNotes">Order notes (optional)</label>
+        <textarea class="form-control" id="orderNotes" rows="6" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
       </div>
     </form>
   </div>

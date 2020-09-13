@@ -24,10 +24,10 @@
             <div>              
                 <ul class="navbar-nav flex-row">
                     <li class="nav-item active">
-                        <a class="nav-link mx-lg-2" href="#"><img class="mr-1 custom-mt" src="@/assets/icons/User.png">My account</a>
+                        <router-link to="/account" class="nav-link mx-lg-2"><img class="mr-1 custom-mt" src="@/assets/icons/User.png">My account</router-link>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#"><img class="" src="@/assets/icons/Heart.png"></a>
+                        <router-link to="/wishlist" class="nav-link"><img class="" src="@/assets/icons/Heart.png"></router-link>
                     </li>
                     <li class="nav-item d-none d-lg-block">
                         <router-link to="/compare" class="nav-link">

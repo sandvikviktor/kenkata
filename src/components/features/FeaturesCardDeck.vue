@@ -26,4 +26,9 @@ export default {
     color: white;
     cursor: pointer;
 }
+/* @media (min-width: 1630px) and (max-width: 1200px) {
+    .row {
+        padding: 0 10em !important;
+    }
+} */
 </style>
